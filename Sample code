@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Homepage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      color: #1c1e21;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    header {
+      background-color: #ffffff;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #4b4f56;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1877f2;
+    }
+
+    .nav-btn {
+      background-color: #1877f2;
+      color: #ffffff !important;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+    }
+
+    .nav-btn:hover {
+      background-color: #166fe5;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background-color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1c1e21;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #4b4f56;
+      font-size: 1.1rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-color: #1877f2;
+      color: #ffffff;
+      padding: 0.85rem 1.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .cta-btn:hover {
+      background-color: #166fe5;
+    }
+
+    /* Features Grid */
+    .features {
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      padding: 1.8rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 0.6rem;
+      color: #1877f2;
+    }
+
+    .feature-card p {
+      color: #4b4f56;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      color: #65676b;
+      font-size: 0.9rem;
+      border-top: 1px solid #dddfe2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <a href="#" class="logo">MyBrand</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="login.html" class="nav-btn">Log In</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Build Something Great Today</h1>
+    <p>A simple, fast, and secure platform designed to help you organize your projects and collaborate with your team effortlessly.</p>
+    <a href="login.html" class="cta-btn">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Fast Setup</h3>
+      <p>Create your account in seconds and start managing your workflow right away without complex configuration.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Secure Access</h3>
+      <p>Your data stays protected with modern authentication standards and reliable cloud storage.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Responsive Design</h3>
+      <p>Access your dashboard smoothly from any desktop computer, tablet, or mobile phone.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 MyBrand. All rights reserved.
+  </footer>
+
+</body>
+</html>
